@@ -4,5 +4,4 @@ from .views import *
 urlpatterns = [
     path('', GenerateView.as_view()),
     path('generate/', SendNotificationView.as_view(), name='generate'),
-    path('notification/<int:pk>', NotificationView.as_view(), name='notification')
 ]
