@@ -81,7 +81,6 @@ class SendNotificationView(View):
                                                
         try:
             requests.post('http://127.0.0.1:8022/receive/', data=json.dumps(final_data))
-            requests.post('http://127.0.0.1:8022/accounts/save_to_result/', data=json.dumps(final_data))
             print('connection')
         except:
             print("Connetion error")
