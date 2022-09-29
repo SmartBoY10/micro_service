@@ -1,13 +1,11 @@
-from audioop import reverse
 import json
 import random
-from datetime import date, datetime
+from datetime import datetime
 
 import requests
-from django.shortcuts import redirect, render
+from django.shortcuts import render
 from django.views.generic.base import View
 from .models import *
-from icecream import ic
 
 class GenerateView(View):
     def get(self, request):
